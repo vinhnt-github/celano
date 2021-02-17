@@ -1,0 +1,19 @@
+{
+    "posts": [
+      {"id":"1","title":"Irish Fashion Updates in Ireland 2020","author":"typicode","desc":"Marks & Spencer goes digital with their bra fitting service British fashion retailer, Marks &[…]","date":1613538550,"img":"https://i.ibb.co/jgsVFKs/blog3.jpg","comments":15},
+      {"id":"2","title":"Irish Fashion Updates in Ireland 2020","author":"typicode","desc":"Marks & Spencer goes digital with their bra fitting service British fashion retailer, Marks &[…]","date":1613538490,"img":"https://i.ibb.co/j9N0PtG/blog2.jpg","comments":3},
+      {"id":"3","title":"Irish Fashion Updates in Ireland 2020","author":"typicode","desc":"Marks & Spencer goes digital with their bra fitting service British fashion retailer, Marks &[…]","date":1613538430,"img":"https://i.ibb.co/54DvMRf/blog1.jpg","comments":9}
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" },
+    "products": [
+      {"id":"1","title":"title 1","newStatus":true,"regular_price":42,"salce_price":34,"img":"https://i.ibb.co/xf1jMZQ/product6.jpg","rating":2},
+      {"id":"2","title":"title 2","newStatus":false,"regular_price":62,"salce_price":52,"img":"https://i.ibb.co/B3NgJtZ/product5.jpg","rating":3},
+      {"id":"3","title":"title 3","newStatus":false,"regular_price":85,"salce_price":80,"img":"https://i.ibb.co/Z1ysFNd/product4.jpg","rating":5},
+      {"id":"4","title":"title 4","newStatus":true,"regular_price":68,"salce_price":56,"img":"https://i.ibb.co/pPpMSXp/product3.jpg","rating":4},
+      {"id":"5","title":"title 5","newStatus":false,"regular_price":84,"salce_price":74,"img":"https://i.ibb.co/drWq4hF/product2.jpg","rating":4.5},
+      {"id":"6","title":"title 6","newStatus":false,"regular_price":71,"salce_price":57,"img":"https://i.ibb.co/WH8WL4z/product1.jpg","rating":3}
+    ]
+}
