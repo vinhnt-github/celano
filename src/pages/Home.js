@@ -9,6 +9,7 @@ import SectionWoman from './../containers/home/SectionWoman'
 const Home = () => {
     return (
         <HomeContextProvider>
+            {console.log(2)}
             <SectionWoman/>
         </HomeContextProvider>
     );
