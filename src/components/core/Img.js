@@ -10,4 +10,4 @@ const ImgWrap = styled.img`
     max-width: 100%;
 `;
 
-export default Img;
+export default React.memo(Img);

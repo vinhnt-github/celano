@@ -8,4 +8,4 @@ function Heading({ tag, text, ...props }) {
 }
 
 
-export default Heading;
+export default React.memo(Heading);

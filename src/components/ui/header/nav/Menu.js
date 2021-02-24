@@ -20,7 +20,7 @@ const Menu = () => {
         <UlWrap className="menu d-flex ai-center">
             {
                 menuItems.map(({ href, text }, index) =>
-                    <MenuItem href={href} text={text} />
+                    <MenuItem key = {index} href={href} text={text} />
                 )
             }
 

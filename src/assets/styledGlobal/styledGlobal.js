@@ -215,6 +215,9 @@ input, input:focus, button, button:focus, select, select:focus, textarea, textar
 .m-5 {
   margin: 5rem;
 }
+.mt-1-2 {
+  margin-top: 0.5rem;
+}
 .mt-1 {
   margin-top: 1rem;
 }
@@ -229,6 +232,9 @@ input, input:focus, button, button:focus, select, select:focus, textarea, textar
 }
 .mt-5 {
   margin-top: 5rem;
+}
+.mb-1-2 {
+  margin-bottom: 0.5rem;
 }
 .mb-1 {
   margin-bottom: 1rem;
@@ -245,6 +251,9 @@ input, input:focus, button, button:focus, select, select:focus, textarea, textar
 .mb-5 {
   margin-bottom: 5rem;
 }
+.mr-1-2 {
+  margin-right: 0.5rem;
+}
 .mr-1 {
   margin-right: 1rem;
 }
@@ -259,6 +268,9 @@ input, input:focus, button, button:focus, select, select:focus, textarea, textar
 }
 .mr-5 {
   margin-right: 5rem;
+}
+.ml-1-2 {
+  margin-left: 0.5rem;
 }
 .ml-1 {
   margin-left: 1rem;
@@ -367,6 +379,16 @@ img {
 }
 .float-left {
   float: left
+}
+/* color */
+.color-primary{
+  color : ${configGlobal.colorPrimary};
+}
+.color-desc{
+  color : ${configGlobal.colorDesc};
+}
+.text-dec-through{
+  text-decoration-line:line-through;
 }
 `;
 

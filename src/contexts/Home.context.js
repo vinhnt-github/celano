@@ -14,7 +14,6 @@ const HomeContextProvider = ({children})=>{
         }
         fetchProduct();
     }, [])
-    console.log(products);
     const HomeContextValue={
         products,
     }
