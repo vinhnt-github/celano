@@ -10,7 +10,6 @@ function useHover() {
     const handleMouseOver = () => setValue(true);
     const handleMouseOut = () => setValue(false);
     
-    console.log(ref.current);
 
     useEffect(() => {
         const node = ref.current

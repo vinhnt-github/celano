@@ -12,11 +12,11 @@ import Heading from './Heading'
 
 
 
-function Icontext({ tag, text, ...props }) {
+function Icontext({ tag, text,className, ...props }) {
     const [refHover,isHover] = useHover()
     console.log();
     return (
-        <IcontextWrap ref={refHover} className="d-flex ai-center">
+        <IcontextWrap ref={refHover} className="d-flex ai-center" className= {className}>
             <Img src = {isHover?ArrowRightHoverImg:ArrowRightImg} alt="text-icon"/>
             <Heading tag = {tag} text = {text} {...props}/>
         </IcontextWrap> 
@@ -36,6 +36,7 @@ const IcontextWrap = styled.div`
         }
     }
     p {
+        display: inline-block;
         transition: ${configGlobal.transition}
     }
 `

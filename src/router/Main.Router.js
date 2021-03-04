@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 
 import Home from './../pages/Home'
 import About from './../pages/About'
+import Product from './../pages/Product'
 import Loading from './../components/core/Loading'
 
 
@@ -19,6 +20,11 @@ var routers = [
         path: '/about',
         exact: false,
         component: About
+    },
+    {
+        path: '/product/:id',
+        exact: false,
+        component: Product
     }
 ]
 

@@ -7,7 +7,7 @@ import Button from '../../../core/Button';
 import Img from '../../../core/Img';
 import Icontext from "../../../core/Icontext";
 
-import imgWomen from './../../../../assets/images/imgWomen.jpg'
+import imgMan from './../../../../assets/images/imgMan.jpg'
 
 const texts = [
     'jean',
@@ -21,9 +21,9 @@ const texts = [
 function WomenAside(props) {
     return (
         <WomenAsideWrap>
-            <Heading tag = "h3" text = "Women"/>
+            <Heading tag = "h3" text = "Man"/>
             <Button className = "btn btn-primary smaller text-uppercase mb-2" tag = "button" text = "Popular products" />
-            <Img src = {imgWomen} alt = "image-women"/>
+            <Img src = {imgMan} alt = "image-women"/>
             <div className ="row-fb mt-1 mb-1">
                 {
                     texts.map((text,index)=><Icontext key = {index} className = "text-capitalize mt-1-2 mb-1-2 col-fb-6"  tag="p" text = {text}/>)

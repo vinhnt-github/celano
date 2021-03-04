@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext,useEffect } from 'react'
 import styled from 'styled-components';
-import { HomeContext } from './../../contexts/Home.context';
+import { ProductContext } from './../../contexts/Product.context';
 
 import ProductItem from './../../components/ui/home/SectionWoman/productItem';
 import WomenAside from './../../components/ui/home/SectionWoman/WomenAside';
@@ -8,8 +8,11 @@ import WomenAside from './../../components/ui/home/SectionWoman/WomenAside';
 
 
 export default function SectionWoman() {
-    const {products} = useContext(HomeContext)
-    console.log(products);
+    const {woman_products ,fetchProductWoman} = useContext(ProductContext)
+    useEffect(() => {
+        fetchProductWoman();
+    }, [])
+
     return (
         <section>
             <SectionWomanWrap>
@@ -21,7 +24,7 @@ export default function SectionWoman() {
                         <div className="pl-5">
                             <div className = "row-fb">
                                 {
-                                    products.length > 0 && products.map(({id,title,img,newStatus,regular_price,salce_price,rating},index)=> <ProductItem key ={index} id = {id} title= {title} img={img} newStatus = {newStatus} regular_price = {regular_price} salce_price = {salce_price} rating= {rating} />)
+                                    woman_products.length > 0 && woman_products.map(({_id,name,image,status,price,rating,...props},index)=> <ProductItem key ={index} id = {_id} name= {name} image={image} status = {status} price = {price}  rating= {rating} {...props} />)
                                 }
                                 
                             </div>
