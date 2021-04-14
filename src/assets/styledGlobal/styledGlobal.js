@@ -100,6 +100,9 @@ input, input:focus, button, button:focus, select, select:focus, textarea, textar
   max-width: 100%;
   flex-basis: 100%;
 }
+.inter {
+  padding:0 15px;
+}
 /* Text */
 .text-center {
   text-align: center;

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import StartEmptyImg from '../../assets/images/start-empty.svg'
 import StartImg from '../../assets/images/start.svg'
 import Img from './Img'
-function Rating({withRating, ...props}) {
+function Rating({rating, ...props}) {
+    const withRating = (rating*100) / 5;
     return (
         <RatingWrap {...props}>
             <div className="rating">

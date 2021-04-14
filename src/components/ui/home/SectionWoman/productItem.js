@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom';
 import { configGlobal } from './../../../../assets/styledGlobal/configGlobal'
 
 function ProductItem({id,name,image,status,price,rating,...props}) {
-    const withRating = (rating*100) / 5;
+    
     return (
         <ProductItemWrap className="col-fb-4 mb-2">
             <Link to = {`/product/${id}`}>
@@ -23,7 +23,7 @@ function ProductItem({id,name,image,status,price,rating,...props}) {
                     price && (<span className = "regular_price color-primary mr-1-2">${price}</span>)
                 }
             </div>
-            {rating && <Rating withRating = {withRating}/>}
+            {rating && <Rating rating = {rating}/>}
         </ProductItemWrap>
     )
 }
